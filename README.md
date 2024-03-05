@@ -1,8 +1,14 @@
 
 # Ocultar y Desvelar Mensajes en Archivos MIDI
 
-Este programa permite ocultar mensajes de texto dentro de archivos MIDI y luego recuperarlos. Utiliza eventos de cambio de programa en las pistas MIDI para codificar y decodificar los mensajes.
+Estos programas permiten ocultar mensajes de texto dentro de archivos MIDI y luego recuperarlos. Utiliza eventos de cambio de programa en las pistas MIDI para codificar y decodificar los mensajes.
 
+## ¿Por qué hay 2?
+
+- El denominado `caracteresEspeciales.py` recibe cualquier tipo de caracteres del español, mayúsculas, minusculas, espacios, y la mayoria de caracteres especiales de un teclado LATAM
+- El denominado `readyMensajesCortos.py` es una versión mas ligera y rapida, recibe solo caracteres cuyos valores ASCII sean menores a 127, y envía todo el mensaje a minúsculas antes de guaradarlo
+
+ 
 ## Requisitos
 
 Para usar este programa, necesitas Python 3 y la biblioteca `mido`. Puedes instalar `mido` usando pip:
